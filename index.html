@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>COSCO — College Student Christian Organization</title>
+  <style>
+    :root{
+      --accent:#2563eb;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f8fafc;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    body{margin:0;background:var(--bg);color:#0f172a;}
+    .container{max-width:var(--maxw);margin:40px auto;padding:0 20px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{color:var(--muted);margin:6px 0 0}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px;align-items:center}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+
+    .about small{display:block;color:var(--muted);margin-bottom:8px}
+    .groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:14px}
+    .group-card{padding:14px;border-radius:10px;border:1px solid rgba(15,23,42,0.04)}
+    .group-card h4{margin:0 0 6px}
+    .group-card p{margin:0;color:var(--muted);font-size:0.95rem}
+
+    .cta{display:flex;gap:10px;margin-top:16px}
+    .btn{padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    .btn.ghost{background:transparent;border:1px solid rgba(15,23,42,0.06);color:var(--accent)}
+
+    footer{margin-top:40px;padding:18px 0;text-align:center;color:var(--muted);font-size:0.95rem}
+
+    /* RESPONSIVE */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">C</div>
+        <div>
+          <h1>COSCO</h1>
+          <p class="lead">College Student Christian Organization — Seeking students to know Christ</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about" style="text-decoration:none;color:var(--muted);margin-right:12px">About</a>
+        <a href="#groups" style="text-decoration:none;color:var(--muted);margin-right:12px">Core Groups</a>
+        <a href="#contact" style="text-decoration:none;color:var(--muted);">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card about">
+        <small>Founded</small>
+        <h2>Started in 2022</h2>
+        <p style="color:var(--muted);margin-top:12px">COSCO aims to reach college students on campus and online so they'll learn more about Christ, grow in community, and be equipped for servant leadership. We run Bible studies, worship, outreach, mentoring, and fellowship events designed for students.</p>
+
+        <div class="cta">
+          <a class="btn" href="#groups">Explore Core Groups</a>
+          <a class="btn ghost" href="#contact">Get Involved</a>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Quick Info</h3>
+          <p style="margin:6px 0;color:var(--muted)"><strong>Target:</strong> College students</p>
+          <p style="margin:6px 0;color:var(--muted)"><strong>Mission:</strong> Help students know Christ and grow in faith</p>
+          <p style="margin:6px 0;color:var(--muted)"><strong>Where:</strong> Campus chapters & online</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="groups" style="margin-top:28px">
+      <h3>Core Groups</h3>
+      <p style="color:var(--muted);margin-top:6px">Below are COSCO's main ministries — edit this list to match your chapters and group descriptions.</p>
+
+      <div class="groups card" style="margin-top:12px">
+        <div class="group-card">
+          <h4>Worship Team</h4>
+          <p>Lead campus worship nights and support musical ministry during events.</p>
+        </div>
+        <div class="group-card">
+          <h4>Bible Study</h4>
+          <p>Small-group Bible studies focused on Scripture, application, and discussion.</p>
+        </div>
+        <div class="group-card">
+          <h4>Outreach & Evangelism</h4>
+          <p>Organize campus outreach events, service projects, and evangelistic campaigns.</p>
+        </div>
+        <div class="group-card">
+          <h4>Discipleship & Mentoring</h4>
+          <p>Mentor new believers and connect students with spiritual mentors and leaders.</p>
+        </div>
+        <div class="group-card">
+          <h4>Fellowship & Events</h4>
+          <p>Plan social events, retreats, and fellowship opportunities to build community.</p>
+        </div>
+        <div class="group-card">
+          <h4>Media & Communications</h4>
+          <p>Manage social media, promo materials, and event publicity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:28px">
+      <div class="card">
+        <h3 style="margin-top:0">Contact & Next Steps</h3>
+        <p style="color:var(--muted)">Want to start a chapter or join a group? Edit the contact details below or link this site to your organization's email/form.</p>
+
+        <p style="margin:8px 0"><strong>Email:</strong> contact@cosco.example</p>
+        <p style="margin:8px 0"><strong>Instagram:</strong> @cosco_official</p>
+        <p style="margin:8px 0"><strong>Phone (optional):</strong> +63 912 345 6789</p>
+
+        <div style="margin-top:12px">
+          <a class="btn" href="mailto:contact@cosco.example">Email Us</a>
+          <a class="btn ghost" href="#">Join a Group</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© 2025 COSCO — College Student Christian Organization. All rights reserved.</div>
+    </footer>
+  </div>
+</body>
+</html>
